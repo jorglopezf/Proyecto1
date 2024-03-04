@@ -1,0 +1,19 @@
+
+body{
+    background-image: url(../../raze.jpg);
+    background-size: cover;
+
+
+}
+
+#boton1{
+    background-color: powderblue;
+    transition: background-color 0.5s;
+}
+#boton1:hover{
+    background-color: greenyellow;
+}
+
+h1{
+    font-size: 5vw;
+}
