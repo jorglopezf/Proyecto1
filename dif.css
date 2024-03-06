@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0;  
     box-sizing: border-box;
 }
 .header{
@@ -11,9 +11,10 @@
     left: 0;
 }
 
-body{
+#index{
     background-size: cover;
     background-image: url(../../raze2.jpg);
+    background-position:0px 80px;
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -24,6 +25,8 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .nav-link{
@@ -45,7 +48,7 @@ body{
     list-style: none;    
 }
 
-.nav-menu-link{
+.nav-menu-i{
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
@@ -53,11 +56,22 @@ body{
     width: max-content;
 }
 
+.nav-menu-link:hover{
+    background-color:orange ;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
 h1{
     font-weight: 600;
     font-size: 6vw;
     width: 97%;
     text-align: end;
+    padding: 100px 30px;
 }
 
 #bot{ 
@@ -65,24 +79,68 @@ h1{
     height:100px;
     background-color: rgba(250, 128, 114, 0);
     display: flex;
-    margin-top:215px;
+    margin-top:15px;
     margin-left:75%;
 }
 
 button{
     padding-block: 25px;
     padding-inline: 50px;
-    border-radius: 25px;
+    border-radius: 20px;
     border-color: blueviolet;
     background-color:rgb(255, 255, 255);
     font-size: 25px;
+    transition: 0.5s;
     }
 
 .piepag{
     margin-top: 170px;
-    margin-left: 83%;
-    color: white;
+    margin-left: 80%;
+    color: black;
     width: max-content;
-}        
+} 
 
-/* https://www.youtube.com/watch?v=xQstBIPeOdU */
+/* --------------------------------- */
+/* contacto */
+
+#contacto{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+
+/* galeria */
+
+#galeria{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+
+/*nosotros */
+
+#nosotros{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+
+/* clientes */
+
+#clientes{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
