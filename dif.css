@@ -1,5 +1,6 @@
 *{
     margin: 0;  
+    padding: 0;
     box-sizing: border-box;
 }
 .header{
@@ -9,23 +10,24 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 #index{
     background-size: cover;
-    background-image: url(../../raze2.jpg);
-    background-position:0px 80px;
+    background-image: url(./raze2.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     font-family: sans-serif;
-    padding: 90px 20px 0px;
+    position: relative;
 }
 
-.nav{
+nav{
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
+    /* max-width: 992px; */
+    padding-inline: 450px;
     margin: 0 auto;
 }
 
@@ -68,7 +70,7 @@
 
 h1{
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 5vw;
     width: 97%;
     text-align: end;
     padding: 100px 30px;
@@ -80,7 +82,7 @@ h1{
     background-color: rgba(250, 128, 114, 0);
     display: flex;
     margin-top:15px;
-    margin-left:75%;
+    margin-left:71%;
 }
 
 button{
@@ -93,12 +95,19 @@ button{
     transition: 0.5s;
     }
 
-.piepag{
-    margin-top: 170px;
-    margin-left: 80%;
-    color: black;
-    width: max-content;
-} 
+footer{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-right: 50px;
+    justify-content: end;
+    align-items: center
+}
+
+#piepag{
+    color: white;
+}
 
 /* --------------------------------- */
 /* contacto */
@@ -108,8 +117,47 @@ button{
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    font-family: sans-serif;
-    padding: 90px 20px 0px;
+    font-family: sans-serif; 
+}
+
+#container-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.533);
+    z-index: 2;
+    display: grid;
+    place-items: center;
+}
+
+form{
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.163);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.823), rgba(52, 161, 250, 0.583))
+}
+
+form input{
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 /* galeria */
@@ -118,7 +166,7 @@ button{
     background-size: cover;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     font-family: sans-serif;
     padding: 90px 20px 0px;
 }

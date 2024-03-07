@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../prueba.gif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./prueba.gif" />
     <title>Valomancos</title>
-    <link rel="stylesheet" href="dif.css">
-</head>
-<body id="contacto">
+    <link rel="stylesheet" href="dif.css" />
+  </head>
+  <body id="contacto">
+    <!-- Barra de navegacion -->
     <header class="header">
-        <nav class="nav">
-            <a href="./index.html" class="logo nav-link">Inicio</a>
-             <ul class="nav-menu">
-                <li class="nav-menu-i">
-                    <a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
-                </li>
-                <li class="nav-menu-i">
-                    <a href="galeria.html" class="nav-menu-link nav-link">Galeria</a>
-                </li>
-                <li class="nav-menu-i">
-                    <a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a>
-                </li>
-                <li class="nav-menu-i">
-                    <a href="clientes.html" class="nav-menu-link nav-link">Clientes</a>
-                </li>
-             </ul>
-        </nav>
-    </header> 
-</body>
+      <nav>
+        <a href="./index.html" class="logo nav-link">Inicio</a>
+        <ul class="nav-menu">
+          <li class="nav-menu-i">
+            <a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+          </li>
+          <li class="nav-menu-i">
+            <a href="galeria.html" class="nav-menu-link nav-link">Galeria</a>
+          </li>
+          <li class="nav-menu-i">
+            <a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a>
+          </li>
+          <li class="nav-menu-i">
+            <a href="clientes.html" class="nav-menu-link nav-link">Clientes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fin de la Barra de navegacion -->
+    
+    <main id="container-video">
+      <video src="./fondo.mp4" type="video/mp4" autoplay loop muted></video>
+      <div class="capa">
+        <!-- Formulario -->
+        <form>
+          <input type="text" placeholder="nombre y apellido">
+          <input type="text" placeholder="correo">
+          <input type="text" placeholder="cuidad">
+          <input type="text" placeholder="edad">
+          <input type="text" placeholder="telefono">
+          <input type="text" placeholder="">
+        </form>
+        <!-- Fin del Formulario -->
+      </div>
+    </main>
+
+    <!-- Inicio del Pie de pagina -->
+    <footer>
+      <p id="piepag">Derechos reservados © xd</p>
+    </footer>
+    <!-- Fin del Pie de pagina -->
+  </body>
 </html>
