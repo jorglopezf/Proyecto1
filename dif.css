@@ -390,3 +390,21 @@ h2{
     "MORF" 15,
     "SHLN" 50;
 }
+
+.client p {
+  animation-duration: 1.2s;
+  animation-name: slidein;
+  animation-iteration-count: forwards;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
