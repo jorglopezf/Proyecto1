@@ -1,0 +1,128 @@
+$color1: skyblue
+$color2: black
+$color3: yellow
+$color4: white
+$degrada: linear-gradient(#6cd4e2, #dff384)
+$nose: radial-gradient(circle, rgba(53,79,214,1) 5%, rgba(68,91,78,1) 100%)
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap')
+
+@mixin columnaCentrada
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 10px
+
+@mixin filacentrada
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin parrafos
+    font-weight: bold
+    font-size: 20px
+    width: 450px
+    height: 100px
+    border: #59c1cf5e solid 1.5px 
+    border-radius: 10px
+    padding: 10px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: $degrada
+    font-family: "Caladea", serif
+    font-weight: 400
+    font-style: italic
+
+@mixin Boton
+    height: 100px
+    width: 200px
+    border-radius: 10px
+    font-family: "Caladea", serif
+    font-weight: 400
+    font-style: italic
+    font-size: 30px
+
+
+@mixin pepe ($parametro1, $parametro2)
+    background: $parametro1
+    color: $parametro2
+    transition: 0.5
+    border-radius: 20px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    width: 100%
+    height: 100vh
+    background: $nose
+
+header
+    position: fixed    
+    background-color: $color1
+    width: 100%
+    top: 0
+    left: 0
+    a
+        text-decoration: none
+        padding: 10px
+        color: black
+
+#inicio:hover
+    @include pepe (#50f558c7, black)
+    
+#sobremi:hover
+    @include pepe (#FF8638, black)
+
+#proyectos:hover
+    @include pepe(#A138FF, white)
+
+nav
+    display: flex
+    justify-content: space-between
+    width: 100%
+    text-transform: uppercase
+    padding: 15px
+    
+    div
+        display: flex
+        gap: 10px
+
+section
+    @include filacentrada
+    justify-content: space-between
+    margin-top: 40px
+    padding: 15px
+    div
+        img
+            margin: 40px
+        @include columnaCentrada
+        h2
+            color: white
+        p
+            @include parrafos
+        button
+            @include Boton
+            background-color: green
+
+footer     
+    display: flex
+    justify-content: space-between
+    width: 100%
+    text-transform: uppercase
+    padding: 15px  
+    background-color: #000000
+    width: 100%
+    a
+        text-decoration: none
+        color: white
+
+
+
+
+

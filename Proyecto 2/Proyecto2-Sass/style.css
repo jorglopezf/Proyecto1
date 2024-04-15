@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(53, 79, 214) 5%, rgb(68, 91, 78) 100%);
+}
+
+header {
+  position: fixed;
+  background-color: skyblue;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+#inicio:hover {
+  background: rgba(80, 245, 88, 0.7803921569);
+  color: black;
+  transition: 0.5;
+  border-radius: 20px;
+}
+
+#sobremi:hover {
+  background: #FF8638;
+  color: black;
+  transition: 0.5;
+  border-radius: 20px;
+}
+
+#proyectos:hover {
+  background: #A138FF;
+  color: white;
+  transition: 0.5;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px;
+}
+nav div {
+  display: flex;
+  gap: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 15px;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section div img {
+  margin: 40px;
+}
+section div h2 {
+  color: white;
+}
+section div p {
+  font-weight: bold;
+  font-size: 20px;
+  width: 450px;
+  height: 100px;
+  border: rgba(89, 193, 207, 0.368627451) solid 1.5px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#6cd4e2, #dff384);
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+section div button {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  background-color: green;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #000000;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
