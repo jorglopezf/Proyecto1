@@ -4,6 +4,7 @@ $color3: yellow
 $color4: white
 $degrada: linear-gradient(#6cd4e2, #dff384)
 $nose: radial-gradient(circle, rgba(53,79,214,1) 5%, rgba(68,91,78,1) 100%)
+$degrabo: linear-gradient(34deg, rgba(203,213,29,1) 23%, rgba(0,255,72,1) 78%)
 
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap')
 
@@ -21,9 +22,9 @@ $nose: radial-gradient(circle, rgba(53,79,214,1) 5%, rgba(68,91,78,1) 100%)
 
 @mixin parrafos
     font-weight: bold
-    font-size: 20px
+    font-size: 25px
     width: 450px
-    height: 100px
+    height: 200px
     border: #59c1cf5e solid 1.5px 
     border-radius: 10px
     padding: 10px
@@ -37,19 +38,25 @@ $nose: radial-gradient(circle, rgba(53,79,214,1) 5%, rgba(68,91,78,1) 100%)
     font-style: italic
 
 @mixin Boton
-    height: 100px
-    width: 200px
-    border-radius: 10px
-    font-family: "Caladea", serif
-    font-weight: 400
-    font-style: italic
-    font-size: 30px
+    padding: 1.3em 3em
+    font-size: 20px
+    text-transform: uppercase
+    letter-spacing: 2.5px
+    font-weight: 500
+    color: #000
+    background-color: #fff
+    border: none
+    border-radius: 45px
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+    transition: all 0.3s ease 0s
+    cursor: pointer
+    outline: none
 
 
 @mixin pepe ($parametro1, $parametro2)
     background: $parametro1
     color: $parametro2
-    transition: 0.5
+    transition: 1s
     border-radius: 20px
 
 *
@@ -74,7 +81,7 @@ header
         color: black
 
 #inicio:hover
-    @include pepe (#50f558c7, black)
+    @include pepe (#42f742ce, black)
     
 #sobremi:hover
     @include pepe (#FF8638, black)
@@ -97,10 +104,10 @@ section
     @include filacentrada
     justify-content: space-between
     margin-top: 40px
-    padding: 15px
+    padding: 90px
     div
         img
-            margin: 40px
+            margin: 80px
         @include columnaCentrada
         h2
             color: white
@@ -108,19 +115,36 @@ section
             @include parrafos
         button
             @include Boton
-            background-color: green
+        button:hover
+            background-color: #23c483
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4)
+            color: #fff
+            transform: translateY(-7px)
+        button:active
+            transform: translateY(-1px)
+#hola
+    display: flex
+    flex-direction: column
+    gap: 36px
+    p
+        width: 500px
+        height: 400px
 
 footer     
     display: flex
+    align-items: center
     justify-content: space-between
-    width: 100%
     text-transform: uppercase
     padding: 15px  
     background-color: #000000
     width: 100%
-    a
-        text-decoration: none
-        color: white
+    color: white
+
+#foot:hover
+    transform: scale(1.1)
+    transition: 0.5s
+
+
 
 
 

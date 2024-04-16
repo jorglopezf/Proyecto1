@@ -25,23 +25,23 @@ header a {
 }
 
 #inicio:hover {
-  background: rgba(80, 245, 88, 0.7803921569);
+  background: rgba(66, 247, 66, 0.8078431373);
   color: black;
-  transition: 0.5;
+  transition: 1s;
   border-radius: 20px;
 }
 
 #sobremi:hover {
   background: #FF8638;
   color: black;
-  transition: 0.5;
+  transition: 1s;
   border-radius: 20px;
 }
 
 #proyectos:hover {
   background: #A138FF;
   color: white;
-  transition: 0.5;
+  transition: 1s;
   border-radius: 20px;
 }
 
@@ -63,7 +63,7 @@ section {
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
-  padding: 15px;
+  padding: 90px;
 }
 section div {
   display: flex;
@@ -73,16 +73,16 @@ section div {
   gap: 10px;
 }
 section div img {
-  margin: 40px;
+  margin: 80px;
 }
 section div h2 {
   color: white;
 }
 section div p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   width: 450px;
-  height: 100px;
+  height: 200px;
   border: rgba(89, 193, 207, 0.368627451) solid 1.5px;
   border-radius: 10px;
   padding: 10px;
@@ -96,26 +96,52 @@ section div p {
   font-style: italic;
 }
 section div button {
-  height: 100px;
-  width: 200px;
-  border-radius: 10px;
-  font-family: "Caladea", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 30px;
-  background-color: green;
+  padding: 1.3em 3em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+section div button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+section div button:active {
+  transform: translateY(-1px);
+}
+
+#hola {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+#hola p {
+  width: 500px;
+  height: 400px;
 }
 
 footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
   text-transform: uppercase;
   padding: 15px;
   background-color: #000000;
   width: 100%;
-}
-footer a {
-  text-decoration: none;
   color: white;
+}
+
+#foot:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
